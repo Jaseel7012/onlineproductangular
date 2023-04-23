@@ -7,7 +7,8 @@ import { ProductsComponent } from './products/products.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import { ProductAddComponent } from './product-add/product-add.component'
+import { ProductAddComponent } from './product-add/product-add.component';
+import { ProductListViewComponent } from './product-list-view/product-list-view.component'
 
 const myroute:Routes=[
   {
@@ -16,13 +17,17 @@ const myroute:Routes=[
   },{
     path:'add',
     component:ProductAddComponent
+  },{
+    path:'list',
+    component:ProductListViewComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    ProductAddComponent
+    ProductAddComponent,
+    ProductListViewComponent
   ],
   imports: [
     BrowserModule,

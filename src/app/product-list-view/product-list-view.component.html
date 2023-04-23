@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 col-xxl-12" class="table-responsive">
+            <table class="table">
+                <thead>
+                  <tr>
+                   
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Manufacture Date</th>
+                    <th scope="col">Url Of Image</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data">
+                    
+                    <td>{{i.name}}</td>
+                    <td>{{i.description}}</td>
+                    <td>{{i.quantity}}</td>
+                    <td>{{i.price}}</td>
+                    <td>{{i.manufactureDate}}</td>
+                    <td>{{i.urlimage}}</td>
+                    <td><button class="btn btn-danger">Delete</button></td>
+                    <td><button class="btn btn-primary">Update</button></td>
+                   
+                  </tr>
+                 
+                </tbody>
+              </table>
+
+
+
+
+
+        </div>
+    </div>
+</div>
