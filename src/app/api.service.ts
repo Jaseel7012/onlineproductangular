@@ -10,6 +10,9 @@ export class ApiService {
   productView=()=>{
     return this.http.get("http://localhost:8080/product/getallproduct")
   } 
+ productAdd=(data:any)=>{
+  return this.http.post("http://localhost:8080/product/addproduct",data)
 
+ }
   
 }
